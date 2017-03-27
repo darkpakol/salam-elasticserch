@@ -1,24 +1,31 @@
-# salam-elasticsearch
+SalamES
+======
 
-salam-elasticsearch is a tool that automates the process of deleting ElasticSearch instances. 
+SalamES is a tool that automates the process of deleting ElasticSearch instances. 
 
 Usage
 -----
 
 It only requires a file with a list of ElasticSearch hosts. It will automatically perform the deletion of the indices find there. 
 
+You will have to either download the repository or clone it:
+```
+git clone https://github.com/darkpakol/salames
+cd salames
+``` 
+
 You have two options to run it:
 
 ```
 # Make the file executable
-chmod +x salam-elasticsearch.sh
+chmod +x SalamES.sh
 # Launch the script
-./salam-elasticsearch.sh <servers_file>
+./SalamES.sh <servers_file>
 ```
 
 Or more directly:
 ```
-bash salam-elasticsearch.sh <servers_file>
+bash SalamES.sh <servers_file>
 ```
 
 Privacy considerations
@@ -37,5 +44,5 @@ And start the server:
 sudo service tor start
 ```
 
-Afterwards, you may launch the app typing torify first for more privacy: `torify ./salam-elasticsearch.sh <servers_file>`.
-Additionally, you may consider adding a signature as a header. You'd have to add a new parameter as follows: `torify ./salam-elasticsearch.sh <servers_file> "X-Signature: Deleted by You"`.
+Afterwards, you may launch the app typing torify first for more privacy: `torify ./SalamES.sh <servers_file>`.
+Additionally, you may consider adding a signature as a header. You'd have to add a new parameter as follows: `torify ./SalamES.sh <servers_file> "X-Signature: Deleted by You"`.
