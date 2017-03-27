@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "[*] Starting salam-elasticsearch.sh to say goodbye to ElasticSearch servers."
+echo "[*] Starting SalamES.sh to salam (say goodbye) to ElasticSearch servers."
 
 if [ $# -eq 0 ] || [ $# -gt 2 ]
   then
